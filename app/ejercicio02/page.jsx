@@ -1,9 +1,9 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 
 function Ejercicio02() {
-  const [palabra,setPalabra]=useState('')
+  const [palabra,setPalabra] = useState('')
   const [resultado, setResultado] = useState('')
   const matriz =[
       [1,200,200],

@@ -12,6 +12,9 @@ export const Header = () => {
         <nav>
             <ul className='flex justify-evenly uppercase'>
                 <li className='bg-amber-400 rounded-md p-3 shadow-lg'>
+                  <Link href={'/'}>Inicio</Link>
+                </li>
+                <li className='bg-amber-400 rounded-md p-3 shadow-lg'>
                   <Link href={'/ejercicio01'}>Ejercicio 1</Link>
                 </li>
                 <li className='bg-amber-400 rounded-md p-3 shadow-lg'>
