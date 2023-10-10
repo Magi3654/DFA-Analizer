@@ -23,6 +23,9 @@ export const Header = () => {
                 <li className='bg-amber-400 rounded-md p-3 shadow-lg'>
                 <Link href={'/ejercicio03'}>Ejercicio 3</Link>
                 </li>
+                <li className='bg-amber-400 rounded-md p-3 shadow-lg'>
+                <Link href={'/ejercicio04'}>Ejercicio 4</Link>
+                </li>
                
             </ul> 
         </nav>

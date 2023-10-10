@@ -32,7 +32,7 @@ function Ejercicio02() {
       }
       estado = matriz[estado][caracter]; // Corrección aquí
       if (estado === 200) {
-          setResultado('Es un identificador  no válido');
+          setResultado('Es una palabra   no válido');
           return;
       }
       i++;
@@ -46,6 +46,10 @@ function Ejercicio02() {
   }
 return (
   <div>
+      <div className='p-3 text-center text-lg m-2'>
+            <h2 className='p-3 text-center font-bold'>Ejercicio 02</h2>
+            <h2 className='p-3 text-center'>Crea un DFA que acepte todas las cadenas "aabb"</h2>
+      </div>
       <div className='p-3 text-center text-lg m-2'>
           <input className='text-center border-2 border-yellow-400 rounded-md'type="text" placeholder='Coloca la entrada' id='identificador' value={palabra} onChange={(e)=>setPalabra(e.target.value)}/>
       </div>
