@@ -56,11 +56,11 @@ function Ejercicio01() {
         <div className='p-3 text-center'>
             <button  className='p-4 text-center rounded-md bg-yellow-400 text-lg'onClick={analizar}>Analiza la entrada</button>
         </div>
-        <div className='p-3 text-center'>
+        <div className='p-3 text-center text-2xl underline-offset-8 font-bold'> 
             {resultado}
         </div>
     </div>
-  )
+  )//preguntar a Mayra o Eduardo si se puede hacer un under line en un set 
   
 }
 
