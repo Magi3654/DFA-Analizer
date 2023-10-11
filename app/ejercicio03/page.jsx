@@ -7,7 +7,7 @@ function Ejercicio03() {
   const [resultado, setResultado] = useState('')
   const matriz =[
       [1,2,200],
-      [1,1,200]
+      [1,1,200],
       [2,2,200]
   ]
  
@@ -35,7 +35,7 @@ function Ejercicio03() {
       console.log(estado); // Corrección aquí
       if (estado == 200) {
           setResultado('Es una palabra no válida');
-          console.log('estado no valido');
+          
           return;
       }
       i++;
@@ -45,7 +45,7 @@ function Ejercicio03() {
   if (estado == 1) {
       setResultado('Es una palabra válido');
   }else{
-    console.log('No valido');
+    setResultado('Es una palabra no válida')
   }
 
   }

@@ -45,7 +45,7 @@ function Ejercicio02() {
   if (estado == 4) {
       setResultado('Es una palabra válida');
   }else{
-      console.log('No es valido');
+    setResultado('Es una palabra no válida')
   }
 
   }

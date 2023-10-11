@@ -6,8 +6,9 @@ function Ejercicio04() {
     const [palabra,setPalabra]=useState('')
     const [resultado, setResultado] = useState('')
     const matriz =[
-        [1,200,200],
-        [1,1,200]
+        [1,0,200],
+        [2,0,200],
+        [2,2,200]
     ]
    
     //se crea la funcion que analiza el automata
@@ -17,21 +18,20 @@ function Ejercicio04() {
         let estado = 0
         let caracter = 0
         let c = palabra.split('')
-        const patronLetter= new RegExp('[a-zA-Z]')
-
-        const patronDigit=new RegExp('[0-9]')
+        const patronAa= new RegExp('a')
+        const patronBb= new RegExp('b')
       
         
       while (i < c.length) {
-        if (patronLetter.test(c[i])) {
+        if (patronAa.test(c[i])) {
             caracter = 0;
-        } else if (patronDigit.test(c[i])) {
+        } else if (patronBb.test(c[i])) {
             caracter = 1;
         } else {
             caracter = 2;
         }
         estado = matriz[estado][caracter]; // Corrección aquí
-        if (estado === 200) {
+        if (estado == 200) {
             setResultado('Es un identificador  no válido');
             return;
         }
@@ -39,8 +39,10 @@ function Ejercicio04() {
        
       }
     
-    if (estado === 1) {
+    if (estado == 2) {
         setResultado('Es un identificador válido');
+    }else{
+        setResultado('Es una palabra no válida')
     }
  
     }
