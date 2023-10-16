@@ -50,7 +50,7 @@ function Ejercicio04() {
     <div>
         <div className='p-3 text-center text-lg m-2'>
             <h2 className='p-3 text-center font-bold'>Ejercicio 04</h2>
-            <h2 className='p-3 text-center'>Crea un DFA que acepte todas las cadenas donde cada "a" debe ser seguida de una "b"</h2>
+            <h2 className='p-3 text-center'>Crea un DFA que acepte todas las cadenas donde cada "a" debe ser seguida de una "b" con alfabeto a y b</h2>
         </div>
         <div className='p-3 text-center text-lg m-2'>
             <input className='text-center border-2 border-yellow-400 rounded-md'type="text" placeholder='Coloca la entrada' id='identificador' value={palabra} onChange={(e)=>setPalabra(e.target.value)}/>
